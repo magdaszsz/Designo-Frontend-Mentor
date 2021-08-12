@@ -15,7 +15,7 @@
     <title>Frontend Mentor | Designo Agency Website Challenge</title>
   </head>
   <body>
-    <!-- <nav>
+    <nav class="container">
       <div class="nav-logo">
         <a href="index.html">
           <img src="assets/shared/desktop/logo-dark.png" alt="designo logo" />
@@ -50,7 +50,7 @@
         <li class="nav-list-item"><a href="locations.html">Locations</a></li>
         <li class="nav-list-item"><a href="contact.html">Contact</a></li>
       </ul>
-    </nav> -->
+    </nav>
     <div class="title-card dark-peach container">
       <h2 class="title-card-header">App design</h2>
       <p class="title-card-text">
@@ -59,7 +59,7 @@
       </p>
     </div>
 
-    <div class="project-cards-container">
+    <div class="project-cards container">
       <div class="project-card">
         <div class="project-card-image">
           <img src="assets/app-design/desktop/image-airfilter.jpg" alt="">
@@ -116,8 +116,18 @@
         </div>
       </div>
     </div>
+        <section class="linking-cards linking-cards-two container">
+           <div class="linking-card linking-card-two web">
+            <h2 class="linking-card-header">Web design</h2>
+            <a class="linking-card-link" href="web-design.html">View projects <span><img src="assets/shared/desktop/icon-right-arrow.svg" alt=""></span></a>
+          </div>
+          <div class="linking-card linking-card-two design">
+            <h2 class="linking-card-header">Graphic design</h2>
+            <a class="linking-card-link" href="graphic-design.html">View projects <span><img src="assets/shared/desktop/icon-right-arrow.svg" alt=""></span></a>
+          </div>
+      </section>
 
- <div class="cta dark-peach">
+ <div class="cta dark-peach container">
       <div class="cta-body">
         <h2 class="cta-header">Let's talk about<br> your project</h2>
         <p class="cta-text">
@@ -125,7 +135,7 @@
           our expertise can help your business grow.
         </p>
       </div>
-      <a class="btn btn--white" href="#">Get in touch</a>
+      <a class="btn btn--white" href="contact.html">Get in touch</a>
     </div>
     <footer>
       <div class="footer-logo">
@@ -250,5 +260,6 @@
         </li>
       </ul>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>

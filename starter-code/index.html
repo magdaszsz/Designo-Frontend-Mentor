@@ -15,7 +15,7 @@
     <title>Frontend Mentor | Designo Agency Website Challenge</title>
   </head>
   <body>
-    <nav>
+    <nav class="container">
       <div class="nav-logo">
         <a href="index.html">
         <img src="assets/shared/desktop/logo-dark.png" alt="designo logo">
@@ -33,16 +33,21 @@
     </nav>
 
     <main>
-      <div class="hero dark-peach">
-        <h1 class="hero-header">
-          Award-winning custom designs and digital branding solutions
-        </h1>
-        <p class="hero-text">
-          With over 10 years in the industry, we are experienced in creating
-          fully responsive websites, app design, and engaging brand experiences.
-          Find out more about our services.
-        </p>
-        <a class="btn btn--white" href="#">Learn more</a>
+      <div class="hero dark-peach container">
+        <div class="hero-body">
+          <h1 class="hero-header">
+            Award-winning custom designs and digital branding solutions
+          </h1>
+          <p class="hero-text">
+            With over 10 years in the industry, we are experienced in creating
+            fully responsive websites, app design, and engaging brand experiences.
+            Find out more about our services.
+          </p>
+          <a class="btn btn--white" href="about.html">Learn more</a>
+        </div>
+        <div class="hero-image">
+          <img src="assets/home/desktop/image-hero-phone.png" alt="">
+        </div>
       </div>
 
    
@@ -83,27 +88,29 @@
               We are a group of enthusiastic folks who know how to put people
               first. Our success depends on our customers, and we strive to give
               them the best experience a company can provide.
-                  </p>
+              </p>
           </div>
         </div>
       </section>
-         <section class="linking-cards">
-          <div class="linking-card web">
-            <h2 class="linking-card-header">Web design</h2>
-            <a class="linking-card-link" href="#">View projects <span><img src="assets/shared/desktop/icon-right-arrow.svg" alt=""></span></a>
-          </div>
-          <div class="linking-card app">
-            <h2 class="linking-card-header">App design</h2>
-            <a class="linking-card-link" href="#">View projects <span><img src="assets/shared/desktop/icon-right-arrow.svg" alt=""></span></a>
-          </div>
-          <div class="linking-card design">
-            <h2 class="linking-card-header">Graphic design</h2>
-            <a class="linking-card-link" href="#">View projects <span><img src="assets/shared/desktop/icon-right-arrow.svg" alt=""></span></a>
-          </div>
+         <section class="linking-cards linking-cards-three container">
+    
+            <div class="linking-card web">
+              <h2 class="linking-card-header">Web design</h2>
+              <a class="linking-card-link" href="web-design.html">View projects <img src="assets/shared/desktop/icon-right-arrow.svg" alt=""></a>
+            </div>
+            <div class="linking-card app">
+              <h2 class="linking-card-header">App design</h2>
+              <a class="linking-card-link" href="app-design.html">View projects <span><img src="assets/shared/desktop/icon-right-arrow.svg" alt=""></span></a>
+            </div>
+            <div class="linking-card design">
+              <h2 class="linking-card-header">Graphic design</h2>
+              <a class="linking-card-link" href="graphic-design.html">View projects <span><img src="assets/shared/desktop/icon-right-arrow.svg" alt=""></span></a>
+            </div>
+        
       </section>
     </main>
 
-    <div class="cta dark-peach">
+    <div class="cta dark-peach container">
       <div class="cta-body">
         <h2 class="cta-header">Let's talk about<br> your project</h2>
         <p class="cta-text">
@@ -111,7 +118,7 @@
           our expertise can help your business grow.
         </p>
       </div>
-      <a class="btn btn--white" href="#">Get in touch</a>
+      <a class="btn btn--white" href="contact.html">Get in touch</a>
     </div>
     <footer>
       <div class="footer-logo">
@@ -236,5 +243,6 @@
         </li>
       </ul>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>

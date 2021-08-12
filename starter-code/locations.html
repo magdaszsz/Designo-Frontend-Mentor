@@ -14,49 +14,86 @@
     <title>Frontend Mentor | Designo Agency Website Challenge</title>
   </head>
   <body>
-    <div class="location-card">
-      <h2 class="location-card-header"></h2>
-      <p class="location-card-address">
-        <b>Designo Central Office</b><br />
-        3886 Wellington Street<br />
-        Toronto, Ontario M9C 3J5
-      </p>
-      <p class="location-card-contact">
-        <b>Contact</b><br />
-        P : +1 253-863-8967<br />
-        M : contact@designo.co
-      </p>
+      <nav class="container">
+      <div class="nav-logo">
+        <a href="index.html">
+        <img src="assets/shared/desktop/logo-dark.png" alt="designo logo">
+        </a>
+      </div>
+      <div class="nav-toggler">
+        <svg class="icon-hamburger" width="24" height="20" xmlns="http://www.w3.org/2000/svg"><g fill="#1D1C1E" fill-rule="evenodd"><path d="M0 0h24v4H0zM0 8h24v4H0zM0 16h24v4H0z"/></g></svg>
+        <svg class="icon-close" width="20" height="20" xmlns="http://www.w3.org/2000/svg"><path d="M17.071.1L19.9 2.93l-7.071 7.07 7.071 7.072-2.828 2.828L10 12.828l-7.071 7.071L.1 17.071 7.17 10 .102 2.929 2.929.1l7.07 7.07 7.072-7.07z" fill="#1D1C1E" fill-rule="evenodd"/></svg>
+      </div>
+      <ul class="nav-list">
+       <li class="nav-list-item"><a href="about.html">Our company</a></li>
+       <li class="nav-list-item"><a href="locations.html">Locations</a></li>
+       <li class="nav-list-item"><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="location-card container">
+      <div class="location-card-image">
+
+      </div>
+      <div class="location-card-body light-peach">
+        <h2 class="location-card-header">
+          Canada
+        </h2>
+        <p class="location-card-text address">
+          <b>Designo Central Office</b><br />
+          3886 Wellington Street<br />
+          Toronto, Ontario M9C 3J5
+        </p>
+        <p class="location-card-text contact">
+          <b>Contact</b><br />
+          P : +1 253-863-8967<br />
+          M : contact@designo.co
+        </p>
+      </div>
     </div>
 
-    <div class="location-card">
-      <h2 class="location-card-header"></h2>
-      <p class="location-card-address">
-        <b>Designo AU Office</b><br />
-        19 Balonne Street<br />
-        New South Wales 2443
-      </p>
-      <p class="location-card-contact">
-        <b>Contact</b><br />
-        P : (02) 6720 9092<br />
-        M : contact@designo.au
-      </p>
+    <div class="location-card container">
+      <div class="location-card-image">
+
+      </div>
+      <div class="location-card-body light-peach">
+        <h2 class="location-card-header">
+          Australia
+        </h2>
+        <p class="location-card-text address">
+          <b>Designo AU Office</b><br />
+          19 Balonne Street<br />
+          New South Wales 2443
+        </p>
+        <p class="location-card-text contact">
+          <b>Contact</b><br />
+          P : (02) 6720 9092<br />
+          M : contact@designo.au
+        </p>
+      </div>
     </div>
-    <div class="location-card">
-      <h2 class="location-card-header"></h2>
-      <p class="location-card-address">
-        <b>Designo UK Office</b><br />
-        13 Colorado Way<br />
-        Rhyd-y-fro SA8 9GA
-      </p>
-      <p class="location-card-contact">
-        <b>Contact</b><br />
-        P : 078 3115 1400<br />
-        M : contact@designo.uk
-      </p>
+    <div class="location-card container">
+      <div class="location-card-image">
+
+      </div>
+      <div class="location-card-body light-peach">
+        <h2 class="location-card-header">
+          United Kingdom
+        </h2>
+        <p class="location-card-text address">
+          <b>Designo UK Office</b><br />
+          13 Colorado Way<br />
+          Rhyd-y-fro SA8 9GA
+        </p>
+        <p class="location-card-text contact">
+          <b>Contact</b><br />
+          P : 078 3115 1400<br />
+          M : contact@designo.uk
+        </p>
+      </div>
     </div>
 
 
-     <div class="cta dark-peach">
+     <div class="cta dark-peach container">
       <div class="cta-body">
         <h2 class="cta-header">Let's talk about your project</h2>
         <p class="cta-text">
@@ -64,7 +101,7 @@
           our expertise can help your business grow.
         </p>
       </div>
-      <a class="btn btn--white" href="#">Get in touch</a>
+      <a class="btn btn--white" href="contact.html">Get in touch</a>
     </div>
     <footer>
       <div class="footer-logo">
@@ -188,5 +225,6 @@
         </li>
       </ul>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
