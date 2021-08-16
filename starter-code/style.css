@@ -7,6 +7,7 @@
           box-sizing: border-box;
 }
 
+
 :root {
   --black: hsl(270, 3%, 11%);
   --d-gray: hsl(264, 5%, 20%);
@@ -17,7 +18,8 @@
   --l-peach: hsl(11, 100%, 80%);
   --v-l-peach: hsl(14, 76%, 96%);
   --radius: 20px;
-  --font-large: clamp(1.5rem, 1rem + 2vw, 3rem);
+  --font-large: clamp(1.7rem, 1rem + 2vw, 3rem);
+  --font-small: clamp(1rem, .5rem + 2vw, 1.2rem);
 }
 
 h2,
@@ -28,6 +30,7 @@ h1 {
 
 body {
   color: var(--d-gray);
+  font-size: var(--font-small);
 }
 
 .btn {
@@ -117,7 +120,8 @@ img {
 /* HERO */
 .hero {
   border-radius: var(--radius);
-  padding: 0 3rem;
+  /* ten padding psuje mobile */
+  //padding: 0 3rem;
 }
 
 .hero-body {
@@ -238,34 +242,125 @@ nav {
       -ms-flex-align: center;
           align-items: center;
   height: 5rem;
+  /* border: 2px solid salmon; */
 }
 
 .nav-toggler {
   cursor: pointer;
 }
 
-nav.show .icon-close {
+
+.nav-toggler {
+  height: 55px;
+  width: 55px;
+/*   position: fixed;
+  top: 1rem;
+  left: 1rem; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.nav-line {
+  position: relative;
+  height: 4px;
+  width: 30px;
+  border-radius: 5px;
+  background: var(--d-gray);
+  transition: all .5s;
+}
+
+.nav-line::before, .nav-line::after {
+  height: 4px;
+  width: 30px;
+  border-radius: 5px;
+  background: var(--d-gray);
+  content: '';
+  position:absolute;
+  transition: all .5s ease;
+}
+
+.nav-line::before {
+  top: -8px;
+}
+
+.nav-line::after {
+  top: 8px;
+}
+
+.nav-toggler.show .nav-line {
+  background: transparent;
+}
+
+.nav-toggler.show .nav-line::before {
+  transform: rotate(-135deg);
+  top: 0;
+}
+
+.nav-toggler.show .nav-line::after {
+  transform: rotate(135deg);
+  top: 0;
+}
+
+.slidein li:first-of-type {
+animation: slidein .5s ease-in forwards;
+}
+
+.slidein li:last-of-type {
+  animation: slidein .5s ease-in forwards .5s;
+}
+
+.slidein li:nth-of-type(2) {
+  animation: slidein .5s ease-in forwards .3s;
+}
+
+.slideout li:nth-of-type(2) {
+  animation: slideout .5s ease-in forwards;
+}
+
+.slideout li:first-of-type {
+  animation: slideout .5s ease-in forwards;
+}
+
+
+
+.slideout li:last-of-type {
+  animation: slideout .5s ease-in forwards;
+}
+
+@keyframes slidein {
+  from {transform: translateX(-110%)}
+  to {transform: translateX(0)}
+}
+
+@keyframes slideout {
+  from {transform: translateX(0)}
+  to {transform: translateX(-110%)}
+}
+
+/* nav.show .icon-close {
   display: block;
 }
 
 nav.show .icon-hamburger {
   display: none;
-}
+} */
 
 .nav-list {
   display: block;
   position: absolute;
   top: 6rem;
   left: 0;
-  background-color: rgba(0, 0, 0, .7);
   width: 100%;
-  //height: 15rem;
-  -webkit-transform: translateX(-100%);
+  /* border: 2px solid salmon;
+  */
+  /* -webkit-transform: translateX(-100%);
       -ms-transform: translateX(-100%);
           transform: translateX(-100%);
   -webkit-transition: all 0.3s ease-in;
   -o-transition: all 0.3s ease-in;
-  transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in; */
 }
 
 nav.show .nav-list {
@@ -280,10 +375,13 @@ nav.show .nav-list {
   //height: 2rem;
   text-align: left;
   text-transform: uppercase;
+  background-color: rgba(0, 0, 0, .7);
+  //background-color:hsl(11, 73%, 46%);
   //margin: 1rem 0;
   font-size: 1.2rem;
   position: relative;
   padding: 1rem 1.5rem;
+  transform: translateX(-100%);
 }
 
 .nav-logo img {
@@ -331,10 +429,10 @@ nav.show .nav-list {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    width: 40%;
+    width: auto;
     position: static;
     background-color: var(--white);
-    margin-left: auto;
+    //margin-left: auto;
     -webkit-transform: translateX(0);
         -ms-transform: translateX(0);
             transform: translateX(0);
@@ -343,6 +441,7 @@ nav.show .nav-list {
   .nav-list-item {
     color: var(--black);
     padding: 0;
+    background-color: transparent;
   }
 }
 /* END OF NAVIGATION */
@@ -658,6 +757,7 @@ footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    align-items: center;
     margin: 1rem 0;
   }
 
@@ -700,10 +800,28 @@ footer {
 /* END OF SKILLS */
 
 /* ABOUT */
-
-.about img {
-  display: block;
+.about-card {
+  border-radius: var(--radius);
+  overflow: hidden;
 }
+.about-card-body {
+  padding: 3rem;
+}
+
+.about-card-text {
+  margin-top: 2rem;
+  line-height: 1.6;
+}
+
+.about-card img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+
+
 
 @media (min-width: 1000px) {
   .about-card {
@@ -716,6 +834,12 @@ footer {
     overflow: hidden;
   }
 
+  .about-card-image {
+  //border-radius: var(--radius);
+  //overflow: hidden;
+  width: 45%;
+}
+
   .about .about-card-image,
   .real-deal .about-card-image {
     -webkit-box-ordinal-group: 2;
@@ -723,9 +847,13 @@ footer {
             order: 1;
   }
 
+  
+
   .about-card-body {
     padding: 8rem;
+    width: 55%;
     line-height: 1.8;
+    /* border: 2px solid magenta; */
   }
 }
 

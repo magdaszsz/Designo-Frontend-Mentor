@@ -14,13 +14,34 @@
     <title>Frontend Mentor | Designo Agency Website Challenge</title>
   </head>
   <body>
+    <nav class="container">
+      <div class="nav-logo">
+        <a href="index.html">
+          <img src="assets/shared/desktop/logo-dark.png" alt="designo logo" />
+        </a>
+      </div>
+      <div class="nav-toggler">
+        <span class="nav-line"></span>
+      </div>
+      <ul class="nav-list">
+        <li class="nav-list-item"><a href="about.html">Our company</a></li>
+        <li class="nav-list-item"><a href="locations.html">Locations</a></li>
+        <li class="nav-list-item"><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
     <main>
-      <div class="about about-card">
+      <div class="about about-card container">
         <div class="about-card-image">
           <picture>
-            <source srcset="assets/about/tablet/image-about-hero.jpg" media="(min-width: 700px)">
-            <source srcset="assets/about/desktop/image-about-hero.jpg" media="(min-width: 1000px)">
-            <img src="assets/about/mobile/image-about-hero.jpg">
+            <source
+              srcset="assets/about/desktop/image-about-hero.jpg"
+              media="(min-width: 1000px)"
+            />
+            <source
+              srcset="assets/about/tablet/image-about-hero.jpg"
+              media="(min-width: 700px)"
+            />
+            <img src="assets/about/mobile/image-about-hero.jpg" />
           </picture>
         </div>
         <div class="about-card-body dark-peach">
@@ -34,13 +55,17 @@
           </p>
         </div>
       </div>
-      <div class="talent about-card">
+      <div class="talent about-card container">
         <div class="about-card-image">
-            <picture>
-            <source srcset="assets/about/tablet/image-world-class-talent.jpg" media="(min-width: 700px)">
-            <source srcset="assets/about/desktop/image-world-class-talent.jpg" media="(min-width: 1000px)">
-            <img src="assets/about/mobile/image-world-class-talent.jpg">
-          </picture>
+          <picture>
+            <source 
+            srcset="assets/about/desktop/image-world-class-talent.jpg"
+            media="(min-width: 1000px)">
+              <source
+              srcset="assets/about/tablet/image-world-class-talent.jpg"
+              media="(min-width: 700px)">
+               <img src="assets/about/mobile/image-world-class-talent.jpg" />
+         </picture>
         </div>
         <div class="about-card-body light-peach">
           <h2 class="about-card-header">World-class talent</h2>
@@ -59,13 +84,50 @@
           </p>
         </div>
       </div>
-      <div class="real-deal about-card">
+
+      <div class="location-links container">
+        <div class="location-box">
+          <div class="location-box-image">
+            <img src="assets/shared/desktop/illustration-canada.svg" alt="" />
+          </div>
+          <h3 class="location-box-title">Canada</h3>
+          <a class="btn btn--peach" href="#">See location</a>
+        </div>
+        <div class="location-box">
+          <div class="location-box-image">
+            <img
+              src="assets/shared/desktop/illustration-australia.svg"
+              alt=""
+            />
+          </div>
+          <h3 class="location-box-title">Australia</h3>
+          <a class="btn btn--peach" href="#">See location</a>
+        </div>
+        <div class="location-box">
+          <div class="location-box-image">
+            <img
+              src="assets/shared/desktop/illustration-united-kingdom.svg"
+              alt=""
+            />
+          </div>
+          <h3 class="location-box-title">United Kingdom</h3>
+          <a class="btn btn--peach" href="#">See location</a>
+        </div>
+      </div>
+
+      <div class="real-deal about-card container">
         <div class="about-card-image">
-            <picture>
-         
-            <img src="assets/about/mobile/image-real-deal.jpg">
-               <source srcset="assets/about/tablet/image-real-deal.jpg" media="(min-width: 700px)">
-            <source srcset="assets/about/desktop/image-real-deal.jpg" media="(min-width: 1000px)">
+          <picture>
+             <source
+              srcset="assets/about/desktop/image-real-deal.jpg"
+              media="(min-width: 1000px)"
+            />
+            <source
+              srcset="assets/about/tablet/image-real-deal.jpg"
+              media="(min-width: 700px)"
+            />
+          
+             <img src="assets/about/mobile/image-real-deal.jpg" />
           </picture>
         </div>
         <div class="about-card-body light-peach">
@@ -85,33 +147,6 @@
         </div>
       </div>
     </main>
-
-    <div class="location-links container">
-      <div class="location-box">
-        <div class="location-box-image">
-          <img src="assets/shared/desktop/illustration-canada.svg" alt="" />
-        </div>
-        <h3 class="location-box-title">Canada</h3>
-        <a class="btn btn--peach" href="#">See location</a>
-      </div>
-      <div class="location-box">
-        <div class="location-box-image">
-          <img src="assets/shared/desktop/illustration-australia.svg" alt="" />
-        </div>
-        <h3 class="location-box-title">Australia</h3>
-        <a class="btn btn--peach" href="#">See location</a>
-      </div>
-      <div class="location-box">
-        <div class="location-box-image">
-          <img
-            src="assets/shared/desktop/illustration-united-kingdom.svg"
-            alt=""
-          />
-        </div>
-        <h3 class="location-box-title">United Kingdom</h3>
-        <a class="btn btn--peach" href="#">See location</a>
-      </div>
-    </div>
 
     <div class="cta dark-peach container">
       <div class="cta-body">
