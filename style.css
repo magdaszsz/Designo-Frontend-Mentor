@@ -1442,6 +1442,7 @@ input, textarea {
   font-family: inherit;
   background: transparent;
   border: none;
+  font-size: 1rem;
   border-bottom: 2px solid white;
   color: #fff;
 }
@@ -1450,6 +1451,7 @@ input, textarea {
   color: #fff;
   font-family: inherit;
   padding: 1rem 2rem;
+  font-size: 1rem;
 }
 
 .contact-text {
@@ -1459,6 +1461,14 @@ input, textarea {
 
 .contact-body {
   padding: 3rem 0;
+}
+
+.input-wrapper.error .error-message {
+  //color: red;
+}
+
+.input-wrapper.success .error-message {
+  display: none;
 }
 
 @media (min-width: 1000px) {
