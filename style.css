@@ -1240,7 +1240,7 @@ footer {
   background-size: cover;
 }
 
-.canada {
+/* .canada {
   background-image: url(assets/locations/tablet/image-map-canada.png);
 }
 
@@ -1250,7 +1250,7 @@ footer {
 
 .uk {
   background-image: url(assets/locations/tablet/image-map-uk.png);
-}
+} */
 
 @media (min-width: 700px) {
   .location-card {
@@ -1273,17 +1273,17 @@ footer {
     border-radius: var(--radius);
   }
 
-  .canada {
+  /* .canada {
     background-image: url(assets/locations/desktop/image-map-canada.png);
-  }
+  } */
 
-  .australia {
+  /* .australia {
     background-image: url(assets/locations/desktop/image-map-australia.png);
   }
 
   .uk {
     background-image: url(assets/locations/desktop/image-map-united-kingdom.png);
-  }
+  } */
 
   .address {
     grid-area: address;
