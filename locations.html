@@ -1,122 +1,121 @@
 <!DOCTYPE html>
- <!--Coded by-->
-  <!--Magda Sz-->
-  <!--github.com/magdaszsz -->
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
-   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
-   crossorigin=""/>
-   
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="./assets/favicon-32x32.png"
     />
-     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css" />
     <title>Frontend Mentor | Designo Agency Website Challenge</title>
   </head>
   <body>
-      <nav class="container">
-      <div class="nav-logo">
-        <a href="index.html">
-        <img src="assets/shared/desktop/logo-dark.png" alt="designo logo">
-        </a>
+    <div class="container">
+      <nav>
+        <div class="nav-logo">
+          <a href="index.html">
+            <img src="assets/shared/desktop/logo-dark.png" alt="designo logo" />
+          </a>
+        </div>
+        <div class="nav-toggler">
+          <span class="nav-line"></span>
+        </div>
+        <ul class="nav-list">
+          <li class="nav-list-item"><a href="about.html">Our company</a></li>
+          <li class="nav-list-item active">
+            <a href="locations.html">Locations</a>
+          </li>
+          <li class="nav-list-item"><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="location-cards">
+        <div class="location-card">
+          <div class="location-card-image canada" id="map-canada"></div>
+          <div class="location-card-body light-peach">
+            <h2 class="location-card-header">Canada</h2>
+            <p class="location-card-text address">
+              <b>Designo Central Office</b><br />
+              3886 Wellington Street<br />
+              Toronto, Ontario M9C 3J5
+            </p>
+            <p class="location-card-text contact">
+              <b>Contact</b><br />
+              P : +1 253-863-8967<br />
+              M : contact@designo.co
+            </p>
+          </div>
+        </div>
+        <div class="location-card" id="au">
+          <div class="location-card-image australia" id="map-australia"></div>
+          <div class="location-card-body light-peach">
+            <h2 class="location-card-header">Australia</h2>
+            <p class="location-card-text address">
+              <b>Designo AU Office</b><br />
+              19 Balonne Street<br />
+              New South Wales 2443
+            </p>
+            <p class="location-card-text contact">
+              <b>Contact</b><br />
+              P : (02) 6720 9092<br />
+              M : contact@designo.au
+            </p>
+          </div>
+        </div>
+        <div class="location-card" id="uk">
+          <div class="location-card-image uk" id="map-uk"></div>
+          <div class="location-card-body light-peach">
+            <h2 class="location-card-header">United Kingdom</h2>
+            <p class="location-card-text address">
+              <b>Designo UK Office</b><br />
+              13 Colorado Way<br />
+              Rhyd-y-fro SA8 9GA
+            </p>
+            <p class="location-card-text contact">
+              <b>Contact</b><br />
+              P : 078 3115 1400<br />
+              M : contact@designo.uk
+            </p>
+          </div>
+        </div>
       </div>
-      <div class="nav-toggler">
-        <span class="nav-line"></span>
-      </div>
-      <ul class="nav-list">
-       <li class="nav-list-item"><a href="about.html">Our company</a></li>
-       <li class="nav-list-item"><a href="locations.html">Locations</a></li>
-       <li class="nav-list-item"><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-    <div class="location-card container">
-      <div class="location-card-image canada" id="map-canada">
-
-      </div>
-      <div class="location-card-body light-peach">
-        <h2 class="location-card-header">
-          Canada
-        </h2>
-        <p class="location-card-text address">
-          <b>Designo Central Office</b><br />
-          3886 Wellington Street<br />
-          Toronto, Ontario M9C 3J5
-        </p>
-        <p class="location-card-text contact">
-          <b>Contact</b><br />
-          P : +1 253-863-8967<br />
-          M : contact@designo.co
-        </p>
+      <div class="cta dark-peach">
+        <div class="cta-body">
+          <h2 class="cta-header">Let's talk about your project</h2>
+          <p class="cta-text">
+            Ready to take it to the next level? Contact us today and find out
+            how our expertise can help your business grow.
+          </p>
+        </div>
+        <a class="btn btn--white" href="contact.html">Get in touch</a>
       </div>
     </div>
-
-    <div class="location-card container">
-      <div class="location-card-image australia" id="map-australia">
-
-      </div>
-      <div class="location-card-body light-peach">
-        <h2 class="location-card-header">
-          Australia
-        </h2>
-        <p class="location-card-text address">
-          <b>Designo AU Office</b><br />
-          19 Balonne Street<br />
-          New South Wales 2443
-        </p>
-        <p class="location-card-text contact">
-          <b>Contact</b><br />
-          P : (02) 6720 9092<br />
-          M : contact@designo.au
-        </p>
-      </div>
-    </div>
-    <div class="location-card container">
-      <div class="location-card-image uk" id="map-uk">
-
-      </div>
-      <div class="location-card-body light-peach">
-        <h2 class="location-card-header">
-          United Kingdom
-        </h2>
-        <p class="location-card-text address">
-          <b>Designo UK Office</b><br />
-          13 Colorado Way<br />
-          Rhyd-y-fro SA8 9GA
-        </p>
-        <p class="location-card-text contact">
-          <b>Contact</b><br />
-          P : 078 3115 1400<br />
-          M : contact@designo.uk
-        </p>
-      </div>
-    </div>
-
-
-     <div class="cta dark-peach container">
-      <div class="cta-body">
-        <h2 class="cta-header">Let's talk about your project</h2>
-        <p class="cta-text">
-          Ready to take it to the next level? Contact us today and find out how
-          our expertise can help your business grow.
-        </p>
-      </div>
-      <a class="btn btn--white" href="contact.html">Get in touch</a>
-    </div>
-   <footer>
+    <footer>
       <div class="footer-container">
         <div class="footer-logo">
-          <a href="index.html"><img src="assets/shared/desktop/logo-light.png" alt="" /></a>
+          <a href="index.html"
+            ><img src="assets/shared/desktop/logo-light.png" alt=""
+          /></a>
         </div>
         <ul class="footer-nav-list">
-          <li class="footer-nav-list-item"><a href="about.html">Our company</a></li>
-          <li class="footer-nav-list-item"><a href="locations.html">Locations</a></li>
-          <li class="footer-nav-list-item"><a href="contact.html">Contact</a></li>
+          <li class="footer-nav-list-item">
+            <a href="about.html">Our company</a>
+          </li>
+          <li class="footer-nav-list-item active">
+            <a href="locations.html">Locations</a>
+          </li>
+          <li class="footer-nav-list-item">
+            <a href="contact.html">Contact</a>
+          </li>
         </ul>
         <span class="line"></span>
         <div class="footer-address">
@@ -233,10 +232,12 @@
         </ul>
       </div>
     </footer>
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
-   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
-   crossorigin=""></script>
-   
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+
     <script src="script.js"></script>
   </body>
 </html>

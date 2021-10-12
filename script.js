@@ -1,23 +1,23 @@
-// const navToggler = document.querySelector(".nav-toggler");
-// const nav = document.querySelector("nav");
-// const list = document.querySelector(".nav-list");
+const navToggler = document.querySelector(".nav-toggler");
+const nav = document.querySelector("nav");
+const list = document.querySelector(".nav-list");
 
-// const form = document.querySelector("form");
-// const userName = document.getElementById("name");
-// const text = document.getElementById("textarea");
-// const email = document.getElementById("email");
-// const allInputs = document.querySelectorAll("input");
+const form = document.querySelector("form");
+const userName = document.getElementById("name");
+const text = document.getElementById("textarea");
+const email = document.getElementById("email");
+const allInputs = document.querySelectorAll("input");
 
-// navToggler.addEventListener("click", () => {
-//   navToggler.classList.toggle("show");
-//   if (list.classList.contains("slidein")) {
-//     list.classList.remove("slidein");
-//     list.classList.add("slideout");
-//   } else {
-//     list.classList.remove("slideout");
-//     list.classList.add("slidein");
-//   }
-// });
+navToggler.addEventListener("click", () => {
+  navToggler.classList.toggle("show");
+  if (list.classList.contains("slidein")) {
+    list.classList.remove("slidein");
+    list.classList.add("slideout");
+  } else {
+    list.classList.remove("slideout");
+    list.classList.add("slidein");
+  }
+});
 
 // form.addEventListener("submit", (e) => {
 //   e.preventDefault();
@@ -69,7 +69,7 @@
 
 // }
 
-// LEAFLET JS 
+// LEAFLET JS
 // CANADA
 
 const mapCa = L.map("map-canada").setView([43.64, -79.375], 13);
@@ -100,6 +100,3 @@ L.tileLayer("http://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}", {
 }).addTo(mapUk);
 
 const markerUk = L.marker([53.37, -4.53]).addTo(mapUk);
-
-
-

@@ -1,102 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  <link rel="stylesheet" href="style.css">
-  <title>Frontend Mentor | Designo Agency Website Challenge</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Designo Agency Website Challenge</title>
+  </head>
+  <body>
     <nav class="container">
       <div class="nav-logo">
         <a href="index.html">
-        <img src="assets/shared/desktop/logo-dark.png" alt="designo logo">
+          <img src="assets/shared/desktop/logo-dark.png" alt="designo logo" />
         </a>
       </div>
-     <div class="nav-toggler">
+      <div class="nav-toggler">
         <span class="nav-line"></span>
       </div>
       <ul class="nav-list">
-       <li class="nav-list-item"><a href="about.html">Our company</a></li>
-       <li class="nav-list-item"><a href="locations.html">Locations</a></li>
-       <li class="nav-list-item"><a href="contact.html">Contact</a></li>
+        <li class="nav-list-item"><a href="about.html">Our company</a></li>
+        <li class="nav-list-item"><a href="locations.html">Locations</a></li>
+        <li class="nav-list-item active"><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
-  <div class="contact-section dark-peach">
-    <div class="container">
-      <div class="contact-body">
-        <h2 class="contact-header">
-          Contact Us
-        </h2>
-        <p class="contact-text">
-          Ready to take it to the next level? Let’s talk about your project or idea and find out how 
-        we can help your business grow. If you are looking for unique digital experiences that’s 
-        relatable to your users, drop us a line.
-        </p>
+    <div class="contact-section dark-peach">
+      <div class="container">
+        <div class="contact-body">
+          <h2 class="contact-header">Contact Us</h2>
+          <p class="contact-text">
+            Ready to take it to the next level? Let’s talk about your project or
+            idea and find out how we can help your business grow. If you are
+            looking for unique digital experiences that’s relatable to your
+            users, drop us a line.
+          </p>
+        </div>
+        <form action="" class="contact-form">
+          <div class="input-wrapper">
+            <label class="visually-hidden" for="name">Name</label>
+            <input type="text" name="name" id="name" placeholder="Name" />
+            <small class="error-message"></small>
+          </div>
+          <div class="input-wrapper">
+            <label class="visually-hidden" for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email Address"
+            />
+            <small class="error-message"></small>
+          </div>
+          <div class="input-wrapper">
+            <label class="visually-hidden" for="phone">Phone number</label>
+            <input type="text" name="phone" id="phone" placeholder="Phone" />
+          </div>
+          <div class="input-wrapper">
+            <label class="visually-hidden" for="textarea"
+              >Type your message here</label
+            >
+            <textarea
+              name="message"
+              id="textarea"
+              placeholder="Your Message"
+              rows="5"
+            ></textarea>
+            <small class="error-message"></small>
+          </div>
+          <button type="submit" class="btn btn-contact btn--white">
+            Submit
+          </button>
+        </form>
       </div>
-      <form action="" class="contact-form">
-        <div class="input-wrapper">
-          <label class="visually-hidden" for="name">Name</label>
-          <input type="text" name="name" id="name" placeholder="Name">
-          <small class="error-message"></small>
-        </div>
-        <div class="input-wrapper">
-          <label class="visually-hidden" for="email">Email</label>
-          <input type="email" name="email" id="email" placeholder="Email Address">
-          <small class="error-message"></small>
-        </div>
-        <div class="input-wrapper">
-          <label class="visually-hidden" for="phone">Phone number</label>
-          <input type="text" name="phone" id="phone" placeholder="Phone">
-        </div>
-        <div class="input-wrapper">
-          <label class="visually-hidden" for="textarea">Type your message here</label>
-          <textarea name="message" id="textarea" placeholder="Your Message" rows="5"></textarea>
-          <small class="error-message"></small>
-        </div>
-        <button type="submit" class="btn btn-contact btn--white">Submit</button>
-      </form>
     </div>
-  </div>
 
- <div class="location-links">
-    <div class="location-box">
+    <div class="location-links">
+      <div class="location-box">
         <div class="location-box-image">
-          <img src="assets/shared/desktop/illustration-canada.svg" alt="Toronto skyline">
+          <img
+            src="assets/shared/desktop/illustration-canada.svg"
+            alt="Toronto skyline"
+          />
         </div>
         <h3 class="location-box-title">Canada</h3>
-        <a class="btn btn--peach" href="locations.html">See location</a>
-    </div>
-    <div class="location-box">
+        <a class="btn btn--peach" href="/locations.html">See location</a>
+      </div>
+      <div class="location-box">
         <div class="location-box-image">
-          <img src="assets/shared/desktop/illustration-australia.svg" alt="Sydney Opera House">
+          <img
+            src="assets/shared/desktop/illustration-australia.svg"
+            alt="Sydney Opera House"
+          />
         </div>
-        <h3 class="location-box-title">
-          Australia
-        </h3>
-    <a class="btn btn--peach" href="locations.html">See location</a>
-    </div>
-    <div class="location-box">
-       <div class="location-box-image">
-          <img src="assets/shared/desktop/illustration-united-kingdom.svg" alt="London Bridge">
+        <h3 class="location-box-title">Australia</h3>
+        <a class="btn btn--peach" href="/locations.html#au">See location</a>
+      </div>
+      <div class="location-box">
+        <div class="location-box-image">
+          <img
+            src="assets/shared/desktop/illustration-united-kingdom.svg"
+            alt="London Bridge"
+          />
         </div>
-        <h3 class="location-box-title">
-          United Kingdom
-        </h3>
-    <a class="btn btn--peach" href="locations.html">See location</a>
+        <h3 class="location-box-title">United Kingdom</h3>
+        <a class="btn btn--peach" href="/locations.html#uk">See location</a>
+      </div>
     </div>
-  </div>
 
     <footer id="footer-contact">
       <div class="footer-container">
         <div class="footer-logo">
-          <a href="index.html"><img src="assets/shared/desktop/logo-light.png" alt="" /></a>
+          <a href="index.html"
+            ><img src="assets/shared/desktop/logo-light.png" alt=""
+          /></a>
         </div>
         <ul class="footer-nav-list">
-          <li class="footer-nav-list-item"><a href="about.html">Our company</a></li>
-          <li class="footer-nav-list-item"><a href="locations.html">Locations</a></li>
-          <li class="footer-nav-list-item"><a href="contact.html">Contact</a></li>
+          <li class="footer-nav-list-item">
+            <a href="about.html">Our company</a>
+          </li>
+          <li class="footer-nav-list-item">
+            <a href="locations.html">Locations</a>
+          </li>
+          <li class="footer-nav-list-item active">
+            <a href="contact.html">Contact</a>
+          </li>
         </ul>
         <div class="footer-address">
           Designo Central Office<br />
@@ -213,5 +244,5 @@
       </div>
     </footer>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
